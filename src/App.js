@@ -3,7 +3,8 @@ import React, { useEffect, useState } from 'react';
 function App() {
   const [flag, setFlag] = useState('');
   const [loading, setLoading] = useState(true);
-
+  // I'll be fethcing the link contents and then use DOM parser to parse the DOM and grab the value. I'll use two variables
+  // flag and loading to keep track of the state. I'll use the setInterval function to print characters one at a time
   useEffect(() => {
     async function fetchFlag() {
       try {
