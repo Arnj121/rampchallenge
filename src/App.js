@@ -25,6 +25,8 @@ function App() {
         const flagResponse = await fetch(url);
         const flagText = await flagResponse.text();
         let j=0,word='';
+
+        //print characters one at a time
         let I=setInterval(()=>{
           setFlag(word+=flagText[j])
           j+=1
